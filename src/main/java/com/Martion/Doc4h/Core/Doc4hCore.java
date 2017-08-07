@@ -1,5 +1,6 @@
 package com.Martion.Doc4h.Core;
 
+import com.Martion.Doc4h.Util.FileUtil;
 import com.Martion.Doc4h.Util.PropertiesContent;
 
 import java.util.logging.Logger;
@@ -30,11 +31,16 @@ public class Doc4hCore {
     }
 
     public void buildDoc(){
-        
+
+        try {
+            FileUtil.getFilesByPackageName();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
     public static void main(String args[]){
-        new Doc4hCore().setSourcePath("doc4h.properties");
+        new Doc4hCore().setSourcePath("doc4h.properties").buildDoc();
     }
 
 
