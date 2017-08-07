@@ -1,5 +1,6 @@
 package com.Martion.Doc4h.Core;
 
+import com.Martion.Doc4h.Service.DocumentParser;
 import com.Martion.Doc4h.Util.FileUtil;
 import com.Martion.Doc4h.Util.PropertiesContent;
 
@@ -42,6 +43,15 @@ public class Doc4hCore {
              * 2.取出文件中的所有controller
              */
             List<String> controllerFiles = FileUtil.controllerFilter(filesPath);
+            /**
+             * 3.doclet执行把所有的文档注释放到DocCoreHandler参数里，调用start方法
+             */
+            filesPath.add(0, "-doclet");
+            filesPath.add(1, DocumentParser.class.getName());
+
+            String[] docArgs = filesPath.toArray(new String[filesPath.size()]);
+
+            com.sun.tools.javadoc.Main.execute(docArgs);
         } catch (Exception e) {
             e.printStackTrace();
         }

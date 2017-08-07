@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,6 +66,7 @@ public class FileUtil {
             packagp = s.substring(baseContents.BASEPATH.length()+packagePath.length()+2,s.length()-5).replace("/",".");
 
             Class<?> fileClass = Class.forName(packagp);
+            Annotation[] a = fileClass.getAnnotations();
             Controller controller = fileClass.getAnnotation(Controller.class);
             RestController restController = fileClass.getAnnotation(RestController.class);
             if (controller != null || restController != null) {
