@@ -48,7 +48,7 @@ public class PropertiesContent {
             throw new Exception("请先初始化配置！");
         }
         if(propertie.containsKey(key)){
-            return propertie.getProperty(key);
+            return propertie.getProperty(key).replaceAll("\"", "");
         }else{
             return null;
         }

@@ -3,6 +3,7 @@ package com.Martion.Doc4h.Core;
 import com.Martion.Doc4h.Util.FileUtil;
 import com.Martion.Doc4h.Util.PropertiesContent;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 /**
@@ -33,7 +34,14 @@ public class Doc4hCore {
     public void buildDoc(){
 
         try {
-            FileUtil.getFilesByPackageName();
+            /**
+             * 1.扫描指定配置包下所有java文件
+             */
+           List<String> filesPath =  FileUtil.getFilesByPackageName();
+            /**
+             * 2.取出文件中的所有controller
+             */
+            List<String> controllerFiles = FileUtil.controllerFilter(filesPath);
         } catch (Exception e) {
             e.printStackTrace();
         }
