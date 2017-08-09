@@ -13,6 +13,7 @@ public class testController {
      * @param b
      * @return a+b
      */
+    @RequestMapping(value="/sssaaa")
     public String mian(String a,String b){
 
         return a+b;
