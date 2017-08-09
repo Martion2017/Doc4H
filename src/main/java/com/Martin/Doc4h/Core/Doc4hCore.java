@@ -1,6 +1,5 @@
 package com.Martin.Doc4h.Core;
 
-import com.Martin.Doc4h.Service.DocumentParser;
 import com.Martin.Doc4h.Util.FileUtil;
 import com.Martin.Doc4h.Util.PropertiesContent;
 
@@ -46,7 +45,7 @@ public class Doc4hCore {
              * 3.doclet执行把所有的文档注释放到DocCoreHandler参数里，调用start方法
              */
             filesPath.add(0, "-doclet");
-            filesPath.add(1, DocumentParser.class.getName());
+            filesPath.add(1, DocLetMain.class.getName());
 
             String[] docArgs = filesPath.toArray(new String[filesPath.size()]);
 
