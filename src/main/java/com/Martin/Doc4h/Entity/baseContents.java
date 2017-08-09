@@ -1,4 +1,4 @@
-package com.Martion.Doc4h.Entity;
+package com.Martin.Doc4h.Entity;
 
 public class baseContents {
 

@@ -1,13 +1,10 @@
-package com.Martion.Doc4h.Util;
+package com.Martin.Doc4h.Util;
 
 import org.springframework.core.io.support.PropertiesLoaderUtils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Map;
 import java.util.Properties;
-import java.util.ResourceBundle;
 
 
 public class PropertiesContent {

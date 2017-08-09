@@ -1,4 +1,4 @@
-package com.Martion.Doc4h.Util;
+package com.Martin.Doc4h.Util;
 
 public class HtmlUtil {
 

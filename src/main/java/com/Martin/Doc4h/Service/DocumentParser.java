@@ -1,15 +1,12 @@
-package com.Martion.Doc4h.Service;
+package com.Martin.Doc4h.Service;
 
 import com.sun.javadoc.ClassDoc;
 import com.sun.javadoc.MethodDoc;
 import com.sun.javadoc.RootDoc;
 import com.sun.javadoc.Tag;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
 
 /**
  * 文档解析器

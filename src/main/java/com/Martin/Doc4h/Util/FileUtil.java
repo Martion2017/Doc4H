@@ -1,12 +1,11 @@
-package com.Martion.Doc4h.Util;
+package com.Martin.Doc4h.Util;
 
-import com.Martion.Doc4h.Entity.baseContents;
+import com.Martin.Doc4h.Entity.baseContents;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
 import java.lang.annotation.Annotation;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 

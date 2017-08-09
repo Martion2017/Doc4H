@@ -1,6 +1,6 @@
-package com.Martion.Doc4h.Entity;
+package com.Martin.Doc4h.Entity;
 
-import com.Martion.Doc4h.Util.UUIDUtil;
+import com.Martin.Doc4h.Util.UUIDUtil;
 
 import java.util.List;
 

@@ -1,11 +1,10 @@
-package com.Martion.Doc4h.Core;
+package com.Martin.Doc4h.Core;
 
-import com.Martion.Doc4h.Service.DocumentParser;
-import com.Martion.Doc4h.Util.FileUtil;
-import com.Martion.Doc4h.Util.PropertiesContent;
+import com.Martin.Doc4h.Service.DocumentParser;
+import com.Martin.Doc4h.Util.FileUtil;
+import com.Martin.Doc4h.Util.PropertiesContent;
 
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * 核心日志生产类，主函数
